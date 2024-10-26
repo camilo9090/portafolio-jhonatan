@@ -1,11 +1,24 @@
 
 
 export default function Header() {
-    return (
+  return (
 
 
-        <div className="flex flex-col items-center justify-center h-screen">
-        <h1 className="text-center text-white">Prueba</h1>
+
+    <header className="">
+      {/* navegacion */}
+      <div className="relative min-h-screen">
+
+        <nav className="menu hidden sm:flex sm:justify-center md:justify-center lg:justify-end gap-5 items-center p-4  w-full fixed top-0">
+
+          <a href="">Sobre Mí</a>
+          <a href="">Estudios</a>
+          <a href="">Habilidades</a>
+          <a href="">Proyectos</a>
+
+        </nav>
       </div>
-    )
+
+    </header>
+  )
 }

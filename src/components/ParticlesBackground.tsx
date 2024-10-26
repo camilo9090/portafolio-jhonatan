@@ -14,7 +14,7 @@ export default function ParticlesBackground() {
   }, []);
 
   return (
-    <div className="relative h-screen w-screen"> {/* Contenedor principal */}
+    <div className="absolute inset-0 z-0"> {/* Contenedor principal */}
       <Particles
         id="tsparticles"
         init={particlesInit}
@@ -29,11 +29,11 @@ export default function ParticlesBackground() {
           interactivity: {
             events: {
               onClick: {
-                enable: true,
+                enable: false,
                 mode: "push",
               },
               onHover: {
-                enable: true,
+                enable: false,
                 mode: "repulse",
               },
               resize: true,
@@ -43,8 +43,8 @@ export default function ParticlesBackground() {
                 quantity: 4,
               },
               repulse: {
-                distance: 200,
-                duration: 0.4,
+                distance: 0,
+                duration: 0,
               },
             },
           },
@@ -86,9 +86,9 @@ export default function ParticlesBackground() {
               value: { min: 1, max: 5 },
             },
           },
-          detectRetina: true,
+          detectRetina: false
         }}
-        className="absolute inset-0 z-0" // Aseguramos que las partículas ocupen el fondo
+    
       />
 
       
