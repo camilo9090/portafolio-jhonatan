@@ -27,11 +27,11 @@ const Header: React.FC = () => {
           }}
         >
           <div className="max-w-screen-lg mx-auto flex items-center gap-5 h-full p-10 sm:justify-center md:justify-center lg:justify-end ">
-            <div className=" gap-5 text-2xl hidden sm:flex ">
-              <a href="#about">Sobre Mí</a>
-              <a href="#education">Estudios</a>
-              <a href="#skills">Habilidades</a>
-              <a href="#projects">Proyectos</a>
+            <div className=" gap-5 text-2xl hidden sm:flex  ">
+              <a className='hover:underline hover:text-white ' href="#about">Sobre Mí</a>
+              <a className='hover:underline hover:text-white' href="#education">Estudios</a>
+              <a className='hover:underline hover:text-white' href="#skills">Habilidades</a>
+              <a className='hover:underline hover:text-white' href="#projects">Proyectos</a>
             </div>
           </div>
 

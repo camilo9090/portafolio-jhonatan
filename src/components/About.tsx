@@ -7,7 +7,7 @@ export default function
     return (
 
 
-<div className="flex items-center justify-center min-h-screen w-screen mt-5">
+<div className="flex items-center justify-center min-h-screen w-screen mt-5 animate-fade-up animate-once">
     <section className="w-full max-w-4xl px-4">
         <div className="rounded-lg bg-black bg-opacity-70 text-center p-8 shadow-lg border border-gray-300 ">
             <h2 className="text-white text-4xl  font-black "

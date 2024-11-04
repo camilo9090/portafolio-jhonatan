@@ -1,15 +1,58 @@
+import { useEffect, useState } from 'react';
+import Typewrite from "../hooks/useTypeWrite";
+
 
 
 
 
 export default function Main() {
+
+
+    const [test, setTest] = useState(["", ""]);
+
+
+    useEffect(() => {
+
+        setTest([
+
+            (test[0] = "Ingeniero de sistemas y Computación"),
+            (test[1] = "Desarrollador Front End")
+
+        ])
+    }, [])
+
     return (
 
         <main className="text-gray-100  pt-72 md:pt-6 -mt-24 md:-mt-32 md:pb-10 gap-0 bg-slate-950 bg-opacity-80">
-            <div className="max-w-6xl mx-auto md:px-4 pt-28 md:pt-36 grid md:grid-cols-3  ">
+            <div className="max-w-6xl mx-auto md:px-4 pt-28 md:pt-36 grid md:grid-cols-3 animate-fade-left animate-once ">
 
+
+                <div className="text-4xl md:col-span-2 flex items-center font-extrabold p-2 mt-8  md:text-left drop-shadow-[0_3.2px_3.2px_rgba(0,78,207,1)] ">
+
+                    <div>
+                        <h1>Hola, soy
+                            <span className="bg-gradient-to-l from-gray-200 to-blue-400 text-transparent bg-clip-text drop-shadow-none"> Jhonatan Camilo Uribe Paez</span>
+                        </h1>
+                        <div className=" md:text-5xl ">
+                            <Typewrite
+
+                                words={test}
+                                delay={80}
+                            />
+
+                            <div className='flex justify-center mt-5 flex-col gap-5 sm:mt-6  sm:grid sm:grid-cols-2 '>
+                                <a className='relative inline-flex' href="">test</a>
+                                <a className='relative inline-flex' href="">test2</a>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
 
                 <div className="md:col-start-3 flex flex-col gap-5 justify-start items-center py-3 ">
+
+
 
                     <img
                         className="max-w-52 md:max-w-full h-auto rounded-full mt-20 shadow-lg shadow-sky-700 "
@@ -32,8 +75,8 @@ export default function Main() {
                                 xmlns="http://www.w3.org/2000/svg"
                                 x="0px"
                                 y="0px"
-                                width="25"
-                                height="25"
+                                width="`20"
+                                height="20"
                                 viewBox="0 0 48 48"
                             >
                                 <path
