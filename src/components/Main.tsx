@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import Typewrite from "../hooks/useTypeWrite";
+import { AiOutlineDownload, AiFillGithub } from 'react-icons/ai';
 
 
 
@@ -15,7 +16,7 @@ export default function Main() {
 
         setTest([
 
-            (test[0] = "Ingeniero de sistemas y Computación"),
+            (test[0] = "Ingeniero de sistemas"),
             (test[1] = "Desarrollador Front End")
 
         ])
@@ -25,35 +26,51 @@ export default function Main() {
 
         <main className="text-gray-100  pt-72 md:pt-6 -mt-24 md:-mt-32 md:pb-10 gap-0 bg-slate-950 bg-opacity-80">
             <div className="max-w-6xl mx-auto md:px-4 pt-28 md:pt-36 grid md:grid-cols-3 animate-fade-left animate-once ">
-
-
                 <div className="text-4xl md:col-span-2 flex items-center font-extrabold p-2 mt-8  md:text-left drop-shadow-[0_3.2px_3.2px_rgba(0,78,207,1)] ">
 
                     <div>
-                        <h1>Hola, soy
+                        <h1 className='text-center'>Hola, soy
                             <span className="bg-gradient-to-l from-gray-200 to-blue-400 text-transparent bg-clip-text drop-shadow-none"> Jhonatan Camilo Uribe Paez</span>
                         </h1>
-                        <div className=" md:text-5xl ">
+                        <div className=" md:text-5xl text-center">
                             <Typewrite
 
                                 words={test}
                                 delay={80}
                             />
 
-                            <div className='flex justify-center mt-5 flex-col gap-5 sm:mt-6  sm:grid sm:grid-cols-2 '>
-                                <a className='relative inline-flex' href="">test</a>
-                                <a className='relative inline-flex' href="">test2</a>
+                            <div className='flex justify-center mt-5 flex-col gap-5 sm:mt-6  sm:grid sm:grid-cols-2 p-4 '>
+                                <a className='group relative inline-flex mt-2 px-4 py-2 bg-slate-500 border rounded-full text-center border-transparent font-bold hover:border-black hover:bg-white'
+                                    href="src/assets/documents/cvJhonatanUribe.pdf"
+                                    download="cvJhonatanUribe.pdf"
+                                >
+                                    <span className='absolute inset-0 border-2 ease-in-out w-full border-white rounded-full group-hover:border-black'></span>
+                                    <AiOutlineDownload
+                                        size={30}
+                                        className='group-hover:text-black'
+                                    />
+                                    <span className='group-hover:text-black relative w-ful text left-5 text-xl'>
+                                        Descargar CV
+                                    </span>
+                                </a>
+                                <a className='group relative inline-flex mt-2 px-4 py-2 bg-slate-500 border rounded-full text-center border-transparent font-bold hover:border-black hover:bg-white'
+                                    target='_blank'
+                                    href="https://github.com/camilo9090">
+                                    <span className='absolute inset-0 border-2 ease-in-out w-full border-white rounded-full group-hover:border-black'></span>
+                                    <AiFillGithub
+                                        size={30}
+                                        className='group-hover:text-black'
+                                    />
+                                    <span className='relative w-ful text left-5 text-xl group-hover:text-black'>
 
+                                        Ver GitHub
+                                    </span>
+                                </a>
                             </div>
                         </div>
-
                     </div>
                 </div>
-
                 <div className="md:col-start-3 flex flex-col gap-5 justify-start items-center py-3 ">
-
-
-
                     <img
                         className="max-w-52 md:max-w-full h-auto rounded-full mt-20 shadow-lg shadow-sky-700 "
                         src="/src/assets/img/imagen1.webp"
@@ -61,8 +78,6 @@ export default function Main() {
                         width={321}
                         height={251}
                     />
-
-
                     <div className='flex  gap-5'>
                         <a
                             href="mailto:camilou9090@gmail.com"
