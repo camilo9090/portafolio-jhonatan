@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import Typewrite from "../hooks/useTypeWrite";
 import { AiOutlineDownload, AiFillGithub } from 'react-icons/ai';
+import { FaLocationDot } from "react-icons/fa6";
 
 
 
@@ -68,6 +69,16 @@ export default function Main() {
                                 </a>
                             </div>
                         </div>
+                        <div className='flex text-center ml-4 mt-5'>
+                            <FaLocationDot
+                            size={30}
+                            className='animate-bounce animate-infinite'
+                            />
+                            <h1 className='ml-4 text-xl font-bold'>Disponible en:
+
+                                <span> Caicedonia | Armenia</span>
+                            </h1>
+                            </div>
                     </div>
                 </div>
                 <div className="md:col-start-3 flex flex-col gap-5 justify-start items-center py-3 ">
@@ -79,6 +90,7 @@ export default function Main() {
                         height={251}
                     />
                     <div className='flex  gap-5'>
+                   
                         <a
                             href="mailto:camilou9090@gmail.com"
                             target="_blank"
@@ -181,13 +193,15 @@ export default function Main() {
 
                         </a>
                     </div>
+                    
                 </div>
 
 
 
-
+                
             </div>
-
+           
+           
 
         </main>
 
