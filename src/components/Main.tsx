@@ -41,11 +41,11 @@ export default function Main() {
                             />
 
                             <div className='flex justify-center mt-5 flex-col gap-5 sm:mt-6  sm:grid sm:grid-cols-2 p-4 '>
-                                <a className='group relative inline-flex mt-2 px-4 py-2 bg-slate-500 border rounded-full text-center border-transparent font-bold hover:border-black hover:bg-white'
+                                <a className='group relative inline-flex mt-2 px-4 py-2 bg-slate-500 border rounded-full  text-center border-transparent font-bold hover:border-black hover:bg-white'
                                     href="src/assets/documents/cvJhonatanUribe.pdf"
                                     download="cvJhonatanUribe.pdf"
                                 >
-                                    <span className='absolute inset-0 border-2 ease-in-out w-full border-white rounded-full group-hover:border-black'></span>
+                                    <span className='absolute inset-0 border-2 ease-in-out w-full border-white rounded-full group-hover:border-black transition-colors duration-500'></span>
                                     <AiOutlineDownload
                                         size={30}
                                         className='group-hover:text-black'
@@ -57,10 +57,10 @@ export default function Main() {
                                 <a className='group relative inline-flex mt-2 px-4 py-2 bg-slate-500 border rounded-full text-center border-transparent font-bold hover:border-black hover:bg-white'
                                     target='_blank'
                                     href="https://github.com/camilo9090">
-                                    <span className='absolute inset-0 border-2 ease-in-out w-full border-white rounded-full group-hover:border-black'></span>
+                                    <span className='absolute inset-0 border-2 ease-in-out w-full border-white rounded-full group-hover:border-black transition-colors duration-500'></span>
                                     <AiFillGithub
                                         size={30}
-                                        className='group-hover:text-black'
+                                        className='group-hover:text-black '
                                     />
                                     <span className='relative w-ful text left-5 text-xl group-hover:text-black'>
 
