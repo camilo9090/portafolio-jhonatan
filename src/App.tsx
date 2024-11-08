@@ -5,6 +5,7 @@ import ParticlesBackground from './components/ParticlesBackground';
 import Header from './components/Header';
 import About from './components/About';
 import Main from './components/Main';
+import Estudies from './components/Estudies';
 
 
 
@@ -17,12 +18,11 @@ function App() {
         <ParticlesBackground />
         <div className="relative z-10 ">
           {/* Área de trabajo */}
-          <div >
-          <Header />
-          <Main/>
-          </div>
           
+          <Header />
+          <Main/> 
           <About/>
+          <Estudies/>
         </div>
         {/*  Fin área de trabajo */}
       </div>

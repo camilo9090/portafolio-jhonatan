@@ -26,7 +26,7 @@ export default function Main() {
     return (
 
         <main className="text-gray-100  pt-72 md:pt-6 -mt-24 md:-mt-32 md:pb-10 gap-0 bg-slate-950 bg-opacity-80">
-            <div className="max-w-6xl mx-auto md:px-4 pt-28 md:pt-36 grid md:grid-cols-3 animate-fade-left animate-once ">
+            <div className="max-w-6xl mx-auto md:px-4 pt-28 md:pt-36 grid md:grid-cols-3 md:animate-fade-left md:animate-once md:animate-ease-in md:animate-normal ">
                 <div className="text-4xl md:col-span-2 flex items-center font-extrabold p-2 mt-8  md:text-left drop-shadow-[0_3.2px_3.2px_rgba(0,78,207,1)] ">
 
                     <div>
