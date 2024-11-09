@@ -5,7 +5,8 @@ import ParticlesBackground from './components/ParticlesBackground';
 import Header from './components/Header';
 import About from './components/About';
 import Main from './components/Main';
-import Estudies from './components/Estudies';
+import Studies from './components/Studies';
+import Abilities from './components/Abilities';
 
 
 
@@ -22,7 +23,8 @@ function App() {
           <Header />
           <Main/> 
           <About/>
-          <Estudies/>
+          <Studies/>
+          <Abilities/>
         </div>
         {/*  Fin área de trabajo */}
       </div>

@@ -2,48 +2,48 @@
 
 import { AcademicCapIcon } from "@heroicons/react/24/solid";
 import { useInView } from "react-intersection-observer";
-export default function Estudies() {
+export default function Studies() {
 
 
-    
+
     const { ref: titleStudies, inView: initialTitle } = useInView({
 
         triggerOnce: true,
         initialInView: false
     });
 
-    
-    
+
+
     const { ref: studiesOne, inView: initialInView } = useInView({
 
         triggerOnce: true,
-        
+
     });
 
     const { ref: studiesTwo, inView: initialInViewTwo } = useInView({
 
         triggerOnce: true,
-        
+
     });
 
     const { ref: studiesThree, inView: initialInViewThree } = useInView({
 
         triggerOnce: true,
-        
+
     });
     return (
 
-        <div>
+        <div className="">
             <section id="estudies"
-                className="text-gray-100 "
+                className="text-gray-100 pb-20  px-10" 
                 style={{ textShadow: "2px 2px 5px rgba(0, 0, 255, 0.6)" }}
             >
 
-                <div className={`-mt-10 flex justify-center md:opacity-0 drop-shadow-[2px 2px 5px rgba(0, 0, 255, 0.6)] ${initialTitle && 'px-2 md:animate-fade-down md:animate-once md:animate-ease-in md:animate-normal md:pt-16'}`}
+                <div className={` mx-auto flex justify-center gap-3 md:opacity-0 drop-shadow-[2px 2px 5px rgba(0, 0, 255, 0.6)] ${initialTitle && ' md:animate-fade-down md:animate-once md:animate-ease-in md:animate-normal md:pt-16'}`}
 
                     ref={titleStudies}
                 >
-                    <h2 className={`text-center text-white text-4xl font-black mr-5  `}
+                    <h2 className={`text-center text-white text-4xl font-black  `}
                     >Estudios</h2>
                     <AcademicCapIcon
 
@@ -52,7 +52,7 @@ export default function Estudies() {
 
                 </div>
 
-                <div className="mt-14 pb-0 max-w-xl md:max-w-2xl mx-auto">
+                <div className="pb-10 max-w-xl md:max-w-2xl mx-auto">
 
                     <ul>
 
@@ -98,7 +98,7 @@ export default function Estudies() {
                         <li
                             ref={studiesTwo}
                             className={`relative ml-10 md:opacity-0 md:flex items-start gap-4 py-6  ${initialInViewTwo && 'px-2 md:animate-fade-right md:animate-once md:animate-ease-in md:animate-normal md:pt-16'} `}>
-                            <span className="border-l-4 ml-2 mt-2 border-l-white absolute h-full"></span>
+                            <span className="border-l-4 ml-2  border-l-white absolute h-full"></span>
                             <span className="block bg-white h-5 w-5 rounded-full"></span>
 
                             <div className="text-gray-100 ml-8 md:ml-0 font-bold md:-mt-0 -mt-6 rounded-xl bg-black bg-opacity-70 gap-4 p-6 max-w-lg">
@@ -136,7 +136,7 @@ export default function Estudies() {
                         <li
                             ref={studiesThree}
                             className={`relative md:opacity-0 ml-10 md:flex items-start gap-4 py-6  ${initialInViewThree && 'px-2 md:animate-fade-left md:animate-once md:animate-ease-in md:animate-normal md:pt-16'} `}>
-                            <span className="border-l-4 ml-2 mt-2 border-l-white absolute h-full"></span>
+                            <span className="border-l-4 ml-2 -mt-5 border-l-white absolute h-full"></span>
                             <span className="block bg-white h-5 w-5 rounded-full"></span>
 
                             <div className="text-gray-100 ml-8 md:ml-0 font-bold md:-mt-0 -mt-6 rounded-xl bg-black bg-opacity-70 gap-4 p-6 max-w-lg">
