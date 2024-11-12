@@ -58,7 +58,7 @@ export default function Studies() {
 
                         <li
                             ref={studiesOne}
-                            className={`relative ml-10 md:opacity-0 md:flex items-start gap-4 py-6 ${initialInView && 'px-2 md:animate-fade-left md:animate-once md:animate-ease-in md:animate-normal md:pt-16'} `}>
+                            className={`relative  md:opacity-0 md:flex items-start gap-4 py-6 ${initialInView && 'px-2 md:animate-fade-left md:animate-once md:animate-ease-in md:animate-normal md:pt-16'} `}>
                             <span className="border-l-4 ml-2 mt-2 border-l-white absolute h-full"></span>
                             <span className="block bg-white h-5 w-5 rounded-full"></span>
 
@@ -97,7 +97,7 @@ export default function Studies() {
 
                         <li
                             ref={studiesTwo}
-                            className={`relative ml-10 md:opacity-0 md:flex items-start gap-4 py-6  ${initialInViewTwo && 'px-2 md:animate-fade-right md:animate-once md:animate-ease-in md:animate-normal md:pt-16'} `}>
+                            className={`relative  md:opacity-0 md:flex items-start gap-4 py-6  ${initialInViewTwo && 'px-2 md:animate-fade-right md:animate-once md:animate-ease-in md:animate-normal md:pt-16'} `}>
                             <span className="border-l-4 ml-2  border-l-white absolute h-full"></span>
                             <span className="block bg-white h-5 w-5 rounded-full"></span>
 
@@ -135,7 +135,7 @@ export default function Studies() {
 
                         <li
                             ref={studiesThree}
-                            className={`relative md:opacity-0 ml-10 md:flex items-start gap-4 py-6  ${initialInViewThree && 'px-2 md:animate-fade-left md:animate-once md:animate-ease-in md:animate-normal md:pt-16'} `}>
+                            className={`relative md:opacity-0 md:flex items-start gap-4 py-6  ${initialInViewThree && 'px-2 md:animate-fade-left md:animate-once md:animate-ease-in md:animate-normal md:pt-16'} `}>
                             <span className="border-l-4 ml-2 -mt-5 border-l-white absolute h-full"></span>
                             <span className="block bg-white h-5 w-5 rounded-full"></span>
 

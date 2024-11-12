@@ -20,7 +20,7 @@ export default function
 
 
 
-        <div className={`transition-opacity duration-500  flex items-center justify-center min-h-screen w-screen mt-5 `}>
+        <div className={`transition-opacity duration-500  flex items-center justify-center min-h-screen mt-5 `}>
 
 
 
