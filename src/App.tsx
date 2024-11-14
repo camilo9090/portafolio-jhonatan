@@ -17,14 +17,16 @@ function App() {
     <> 
       <div className="relative">
         <ParticlesBackground />
-        <div className="relative z-10 ">
+        <div className="relative z-10  ">
+         
           {/* Área de trabajo */}
-          
+         
           <Header />
-          <Main/> 
+          <Main/>         
           <About/>
           <Studies/>
           <Abilities/>
+         
         </div>
         {/*  Fin área de trabajo */}
       </div>
