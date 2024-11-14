@@ -32,60 +32,60 @@ export default function Main() {
 
 
             <main className="text-gray-100 bg-transparent  md:pt-6 -mt-24 md:-mt-32 md:pb-10 gap-0 mx-auto">
-                <div className="max-w-6xl mx-auto md:px-4 pt-28 md:pt-36 grid md:grid-cols-3 md:animate-fade-left md:animate-once md:animate-ease-in md:animate-normal ">
+                <div className="max-w-6xl mx-auto md:px-4 pt-28 md:pt-36 md:grid md:grid-cols-3 md:animate-fade-left md:animate-once md:animate-ease-in md:animate-normal ">
                     <div className="text-4xl md:col-span-2 flex items-center font-extrabold p-2 mt-8  md:text-left drop-shadow-[0_3.2px_3.2px_rgba(0,78,207,1)] ">
+                        <div className='md:col-span-2 md:flex items-center px-4'>
+                            <div>
 
-                        <div>
-                            <h1 className='text-center'>Hola, soy
-                                <span className="bg-gradient-to-l from-gray-200 to-blue-400 text-transparent bg-clip-text drop-shadow-none"> Jhonatan Camilo Uribe Paez</span>
-                            </h1>
-                            <div className=" md:text-5xl text-center">
-                                <Typewrite
+                                <h1 className='text-center text-4xl md:text-5xl md:text-left'>Hola, soy
+                                    <span className="bg-gradient-to-l from-gray-200 to-blue-400 text-transparent bg-clip-text drop-shadow-none"> Jhonatan Camilo Uribe Paez</span>
+                                </h1>
+                                <div className="text-4xl md:text-5xl text-center mt-5 md:mt-4 md:text-left leading-snug h-28 lg:h-20 ">
 
-                                    words={test}
-                                    delay={80}
-                                />
 
-                                <div className='flex justify-center mt-5 flex-col gap-5 sm:mt-6  sm:grid sm:grid-cols-2 p-4 '>
-                                    <a className='group relative inline-flex mt-2 px-4 py-2 bg-slate-500 border rounded-full  text-center border-transparent font-bold hover:border-black hover:bg-white'
+                                    <Typewrite
+
+                                        words={test}
+                                        delay={80}
+                                    />
+                                </div>
+                                <div className='flex justify-center mt-5 flex-col gap-4 sm:mt-6 mx-auto sm:grid sm:grid-cols-2 '>
+                                    <a className='group relative inline-flex  justify-start px-4 py-2 bg-slate-500 border 
+                                        rounded-full  text-center border-transparent font-bold hover:border-black hover:bg-white'
                                         href="src/assets/documents/cvJhonatanUribe.pdf"
                                         download="cvJhonatanUribe.pdf"
                                     >
                                         <span className='absolute inset-0 border-2 ease-in-out w-full border-white rounded-full group-hover:border-black transition-colors duration-500'></span>
-                                        <AiOutlineDownload
-                                            size={30}
-                                            className='group-hover:text-black'
-                                        />
-                                        <span className='group-hover:text-black relative w-ful text left-5 text-xl'>
+                                        <AiOutlineDownload size={30} className='group-hover:text-black mr-3 inline-block' />
+                                        <span className='group-hover:text-black relative w-full text-left text-xl'>
                                             Descargar CV
                                         </span>
                                     </a>
-                                    <a className='group relative inline-flex mt-2 px-4 py-2 bg-slate-500 border rounded-full text-center border-transparent font-bold hover:border-black hover:bg-white'
+                                    <a className='group relative inline-flex  justify-start px-4 py-2 bg-slate-500 border rounded-full text-center border-transparent font-bold hover:border-black hover:bg-white'
                                         target='_blank'
-                                        href="https://github.com/camilo9090">
+                                        href="https://github.com/camilo9090"
+                                    >
                                         <span className='absolute inset-0 border-2 ease-in-out w-full border-white rounded-full group-hover:border-black transition-colors duration-500'></span>
-                                        <AiFillGithub
-                                            size={30}
-                                            className='group-hover:text-black '
-                                        />
-                                        <span className='relative w-ful text left-5 text-xl group-hover:text-black'>
-
+                                        <AiFillGithub size={30} className='group-hover:text-black mr-3 inline-block' />
+                                        <span className='relative w-full text-left text-xl group-hover:text-black'>
                                             Ver GitHub
                                         </span>
                                     </a>
                                 </div>
-                            </div>
-                            <div className='flex  justify-center gap-3 mt-10'>
-                                <FaLocationDot
-                                    size={30}
-                                    className='animate-bounce animate-infinite'
-                                />
-                                <h1 className='ml-4 text-xl font-bold'>Disponible en:
 
-                                    <span> Caicedonia | Armenia</span>
-                                </h1>
+                                <div className='flex  justify-center gap-3 mt-10'>
+                                    <FaLocationDot
+                                        size={30}
+                                        className='animate-bounce animate-infinite'
+                                    />
+                                    <h1 className='ml-4 text-xl font-bold'>Disponible en:
+
+                                        <span> Caicedonia | Armenia</span>
+                                    </h1>
+                                </div>
                             </div>
                         </div>
+
                     </div>
                     <div className="md:col-start-3 flex flex-col gap-5 justify-start items-center py-3 ">
                         <img
