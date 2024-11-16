@@ -41,7 +41,7 @@ const { ref: Hduras, inView: initialDuras} = useInView({
       >
         <div 
         
-        className={`flex opacity-0 justify-center text-4xl gap-3 ${initialAbilities&&'md:animate-fade-down md:animate-once md:animate-ease-in md:animate-normal'}`}
+        className={`flex opacity-0 justify-center text-4xl gap-3 ${initialAbilities&&'opacity-100 md:animate-fade-down animate-none md:animate-once md:animate-ease-in md:animate-normal'}`}
         >
 
           <h2 className="font-black">Habilidades</h2>
@@ -55,7 +55,7 @@ const { ref: Hduras, inView: initialDuras} = useInView({
         className="bg-slate-950 bg-opacity-70 border border-white rounded-md mt-8">
 
 
-          <div className={`grid opacity-0 md:grid-cols-2 items-center p-8 gap-5 md:${initialBlandas&&'animate-fade-left animate-once animate-duration-[2000ms] animate-delay-0'}`}
+          <div className={`grid opacity-0 md:grid-cols-2 items-center p-8 gap-5 ${initialBlandas&&'opacity-100  animate-none md:animate-fade-left animate-once animate-duration-[2000ms] animate-delay-0'}`}
 
           >
 
@@ -89,7 +89,7 @@ const { ref: Hduras, inView: initialDuras} = useInView({
 
           <div 
           ref={Hduras}
-          className={`grid md:grid-cols-2 items-center p-8 gap-5 opacity-100 md:${initialDuras&&'animate-fade-right animate-once animate-duration-[2000ms] animate-delay-0'}`}
+          className={`grid md:grid-cols-2 items-center p-8 gap-5 opacity-0 ${initialDuras&&'opacity-100 md:animate-fade-right  animate-none animate-once animate-duration-[2000ms] animate-delay-0'}`}
 
           >
 
@@ -104,7 +104,7 @@ const { ref: Hduras, inView: initialDuras} = useInView({
 
                     <img src={`src/assets/img/${dura.tecnologia}.svg`}
 
-                      className="border transition-all border-white p-3 hover:p-2 rounded-md hover:animate-wiggle animate-infinite animate-duration-950 bg-slate-700 animate-delay-0"
+                      className="border transition-all border-white p-3 md:hover:p-2 rounded-md md:hover:animate-wiggle animate-infinite animate-duration-950 bg-slate-700 animate-delay-0"
                       alt={dura.tecnologia}
                       loading="lazy"
                       width={70}
