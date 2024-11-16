@@ -62,7 +62,7 @@ export default function Studies() {
                             <span className="border-l-4 ml-2 mt-2 border-l-white absolute h-full"></span>
                             <span className="block bg-white h-5 w-5 rounded-full"></span>
 
-                            <div className="text-gray-100 ml-8 md:ml-0 font-bold md:-mt-0 -mt-6 rounded-xl bg-black bg-opacity-70 gap-4 p-6 max-w-lg">
+                            <div className="text-gray-100 ml-8 md:ml-0 font-bold md:-mt-0 -mt-6 rounded-xl bg-black bg-opacity-70 border border-white gap-4 p-6 max-w-lg">
                                 <p
 
                                     className=" text-3xl mb-2 font-bold"> Universidad del Quindío</p>
@@ -101,7 +101,7 @@ export default function Studies() {
                             <span className="border-l-4 ml-2  border-l-white absolute h-full"></span>
                             <span className="block bg-white h-5 w-5 rounded-full"></span>
 
-                            <div className="text-gray-100 ml-8 md:ml-0 font-bold md:-mt-0 -mt-6 rounded-xl bg-black bg-opacity-70 gap-4 p-6 max-w-lg">
+                            <div className="text-gray-100 ml-8 md:ml-0 font-bold md:-mt-0 -mt-6 rounded-xl border border-white bg-black bg-opacity-70 gap-4 p-6 max-w-lg">
                                 <p className=" text-3xl mb-2 font-bold"> Udemy</p>
 
                                 <p
@@ -139,7 +139,7 @@ export default function Studies() {
                             <span className="border-l-4 ml-2 -mt-5 border-l-white absolute h-full"></span>
                             <span className="block bg-white h-5 w-5 rounded-full"></span>
 
-                            <div className="text-gray-100 ml-8 md:ml-0 font-bold md:-mt-0 -mt-6 rounded-xl bg-black bg-opacity-70 gap-4 p-6 max-w-lg">
+                            <div className="text-gray-100 ml-8 md:ml-0 font-bold md:-mt-0 -mt-6 rounded-xl border border-white bg-black bg-opacity-70 gap-4 p-6 max-w-lg">
                                 <p
 
                                     className=" text-3xl mb-2 font-bold"> Udemy</p>
