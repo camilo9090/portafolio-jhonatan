@@ -8,11 +8,17 @@ export type durasType={
     tecnologia:string
 }
 
-export type projects={
+type tecnologiaType = {
+    nombre: string;
+    color: string;
+  }
+
+export type projectsType={
 
 nombre:string
-description:string
-linkProject:string
-linkGit:string
+url:string
+repositorio:string
+descripcion:string
+tecnologias:tecnologiaType[]
 img:string
 }

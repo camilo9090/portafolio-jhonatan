@@ -40,17 +40,18 @@ export default function Main() {
                                 <h1 className='text-center text-4xl md:text-5xl md:text-left'>Hola, soy
                                     <span className="bg-gradient-to-l from-gray-200 to-blue-400 text-transparent bg-clip-text drop-shadow-none"> Jhonatan Camilo Uribe Paez</span>
                                 </h1>
-                                <div className="text-4xl md:text-5xl text-center mt-5 md:mt-4 md:text-left leading-snug h-28 lg:h-20 ">
+                                <div className="text-4xl md:text-5xl text-center mt-5 md:mt-4 md:text-left leading-snug h-28 lg:h-20  ">
 
 
                                     <Typewrite
+                                    
 
                                         words={test}
                                         delay={80}
                                     />
                                 </div>
-                                <div className='flex justify-center mt-5 flex-col gap-4 sm:mt-6 mx-auto sm:grid sm:grid-cols-2 '>
-                                    <a className='group relative inline-flex  justify-start px-4 py-2 bg-slate-500 border 
+                                <div className='flex justify-center mt-10 flex-col gap-4 sm:mt-6 mx-auto sm:grid sm:grid-cols-2 '>
+                                    <a className='group relative inline-flex  justify-start px-3 py-2 bg-slate-500 border 
                                         rounded-full  text-center border-transparent font-bold hover:border-black hover:bg-white'
                                         href="src/assets/documents/cvJhonatanUribe.pdf"
                                         download="cvJhonatanUribe.pdf"
