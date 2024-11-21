@@ -2,10 +2,7 @@
 import { useInView } from "react-intersection-observer"
 
 
-export default function
-
-
-    () {
+export default function () {
 
 
     const { ref: aboutme, inView: initialInView } = useInView({

@@ -11,37 +11,38 @@ export default function Abilities() {
 
     triggerOnce: true,
     initialInView: false
-});
+  });
 
 
-const { ref: Hblandas, inView: initialBlandas} = useInView({
+  const { ref: Hblandas, inView: initialBlandas } = useInView({
 
-  triggerOnce: true,
- 
-});
+    triggerOnce: true,
 
-const { ref: Hduras, inView: initialDuras} = useInView({
+  });
 
-  triggerOnce: true,
- 
-});
+  const { ref: Hduras, inView: initialDuras } = useInView({
+
+    triggerOnce: true,
+
+  });
 
 
   return (
 
 
     <section className="relative h-full w-full"
+      id="habilidades"
       style={{ textShadow: "2px 2px 5px rgba(0, 0, 255, 0.6)" }}
     >
 
-      <div 
-      id="habilidades" 
-      className="max-w-xl md:max-w-5xl mx-auto pt-10"
-      ref={titleAbilities}
+      <div
+
+        className="max-w-xl md:max-w-5xl mx-auto pt-10"
+        ref={titleAbilities}
       >
-        <div 
-        
-        className={`flex opacity-0 justify-center text-4xl gap-3 ${initialAbilities&&'opacity-100 md:animate-fade-down animate-none md:animate-once md:animate-ease-in md:animate-normal'}`}
+        <div
+
+          className={`flex opacity-0 justify-center text-4xl gap-3 ${initialAbilities && 'opacity-100 md:animate-fade-down animate-none md:animate-once md:animate-ease-in md:animate-normal'}`}
         >
 
           <h2 className="font-black">Habilidades</h2>
@@ -50,12 +51,12 @@ const { ref: Hduras, inView: initialDuras} = useInView({
           />
         </div>
 
-        <div 
-        ref={Hblandas}
-        className="bg-slate-950 bg-opacity-70 border border-white rounded-md mt-8">
+        <div
+          ref={Hblandas}
+          className="bg-slate-950 bg-opacity-70 border border-white rounded-md mt-8">
 
 
-          <div className={`grid opacity-0 md:grid-cols-2 items-center p-8 gap-5 ${initialBlandas&&'opacity-100  animate-none md:animate-fade-left animate-once animate-duration-[2000ms] animate-delay-0'}`}
+          <div className={`grid opacity-0 md:grid-cols-2 items-center p-8 gap-5 ${initialBlandas && 'opacity-100  animate-none md:animate-fade-left animate-once animate-duration-[2000ms] animate-delay-0'}`}
 
           >
 
@@ -87,9 +88,9 @@ const { ref: Hduras, inView: initialDuras} = useInView({
           </div>
 
 
-          <div 
-          ref={Hduras}
-          className={`grid md:grid-cols-2 items-center p-8 gap-5 opacity-0 ${initialDuras&&'opacity-100 md:animate-fade-right  animate-none animate-once animate-duration-[2000ms] animate-delay-0'}`}
+          <div
+            ref={Hduras}
+            className={`grid md:grid-cols-2 items-center p-8 gap-5 opacity-0 ${initialDuras && 'opacity-100 md:animate-fade-right  animate-none animate-once animate-duration-[2000ms] animate-delay-0'}`}
 
           >
 

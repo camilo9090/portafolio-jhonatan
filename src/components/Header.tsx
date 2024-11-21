@@ -1,12 +1,15 @@
 import { FaBars, FaTimes } from 'react-icons/fa';
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useState } from 'react'
+import { Link, animateScroll as scroll } from "react-scroll";
 
 
 
 const Header = () => {
 
+
+
   const [scrollPos, setScrollPos] = useState(0);
-  const headerRef = useRef<HTMLHeadingElement>(null);
+
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -26,6 +29,9 @@ const Header = () => {
   }, []);
 
   const opacity = scrollPos > 10 ? Math.min(scrollPos / 100, 0.95) : 0;
+
+  /* 
+    const leer=() */
 
   return (
     <header className={`sticky z-50   shadow-blue-700  top-0 w-full lg:transition lg:duration-600 lg:ease-in-out  ${scrollPos > 100 ? "shadow-md" : "bg-transparent"
@@ -72,10 +78,50 @@ const Header = () => {
             mb-8 md:mb-0 md:flex-row text-right md:col-span-12
              lg:pb-0 transition-all duration-600 ease-in-out z-50
             }  ${isOpen ? 'flex h-auto ' : 'hidden'}`}>
-                <a className='font-bold hover:text-white hover:underline' href="">Sobre Mí</a>
-                <a className='font-bold hover:text-white hover:underline' href="">Estudios</a>
-                <a className='font-bold hover:text-white hover:underline' href="">Habilidades</a>
-                <a className='font-bold hover:text-white hover:underline' href="">Proyectos</a>
+
+
+
+
+
+                <Link
+                  to="aboutme"
+                  smooth={true}
+                  duration={500}
+                  className=""
+                >
+                  Sobre Mí
+                </Link>
+
+
+                <Link
+                  to='estudies'
+                  smooth={true}
+                  duration={500}
+                  className='font-bold hover:text-white hover:underline'
+
+
+                >Estudios</Link>
+                <Link
+                  to='habilidades'
+                  smooth={true}
+                  duration={500}
+                  className='font-bold hover:text-white hover:underline'
+
+
+                >Habilidades</Link>
+                
+                
+                <Link
+                  to='projects'
+                  smooth={true}
+                  duration={500}
+                  className='font-bold hover:text-white hover:underline'
+
+
+                >Proyectos</Link>
+
+
+
 
 
               </nav>

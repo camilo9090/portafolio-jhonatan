@@ -20,7 +20,7 @@ function App() {
     <> 
       <div className="relative">
         <ParticlesBackground />
-        <div className="relative z-10  ">
+        <div className="relative z-10 scroll-smooth  ">
          
           {/* Área de trabajo */}
          

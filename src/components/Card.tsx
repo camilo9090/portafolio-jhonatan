@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { projectsType } from "../types"
-import { AiFillGithub,AiFillFolder } from "react-icons/ai"
+import { AiFillGithub, AiFillFolder } from "react-icons/ai"
 
 
 
@@ -101,7 +101,10 @@ export default function Card({ project }: CardProps) {
                 <div className="grid grid-cols-1 md:grid-cols-2 mt-5 gap-5 justify-center">
                     <div className=" group bg-slate-500 hover:bg-white p-2 border hover:border-black border-white rounded-md flex ">
 
-                        <a className="inline-flex items-center" href={project.repositorio}>
+                        <a
+                            className="inline-flex items-center"
+                            target='_blank'
+                            href={project.repositorio}>
                             <AiFillGithub size={30} className='group-hover:text-black mr-3 inline-block' />
                             <span className="group-hover:text-black relative w-full text-left text-md">Repositorio</span>
 
@@ -110,17 +113,20 @@ export default function Card({ project }: CardProps) {
                     </div>
 
                     {project.nombre !== "portafolio" && (
-                       <div className=" group bg-slate-500 hover:bg-white p-2 border hover:border-black border-white rounded-md flex ">
+                        <div className=" group bg-slate-500  hover:bg-white p-2 border hover:border-black border-white rounded-md flex ">
 
 
-                       <a className="inline-flex items-center" href={project.url}>
+                            <a
+                                className="inline-flex items-center"
+                                target='_blank'
+                                href={project.url}>
 
-                           <AiFillFolder size={30} className='group-hover:text-black mr-3 inline-block' />
-                           <span className="group-hover:text-black relative w-full text-left text-md">Demo</span>
+                                <AiFillFolder size={30} className='group-hover:text-black mr-3 inline-block' />
+                                <span className="group-hover:text-black relative w-full text-left text-md">Demo</span>
 
-                       </a>
+                            </a>
 
-                   </div>
+                        </div>
                     )}
 
 

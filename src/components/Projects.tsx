@@ -6,7 +6,7 @@ export default function Projects() {
 
 
   return (
-    <section className="">
+    <section id="projects">
 
       <div className="relative h-full w-full py-10 "
         style={{ textShadow: "2px 2px 5px rgba(0, 0, 255, 0.6)" }}
