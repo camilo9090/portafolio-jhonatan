@@ -1,6 +1,6 @@
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { useEffect, useState } from 'react'
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 
 
 

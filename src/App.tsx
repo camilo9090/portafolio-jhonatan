@@ -8,8 +8,7 @@ import Main from './components/Main';
 import Studies from './components/Studies';
 import Abilities from './components/Abilities';
 import Projects from './components/Projects';
-import Card from './components/Card';
-import { projects } from './data/data';
+
 
 
 
