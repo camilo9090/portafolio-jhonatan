@@ -32,7 +32,7 @@ export default function Card({ project }: CardProps) {
                 href={`${project.url}`}>
                 <div className="hover:scale-105 transition-transform duration-500 p-1">
                     <img
-                        src={`../src/assets/img/projects/${project.img}.webp`}
+                        src={`img/projects/${project.img}.webp`}
                         alt={`${project.nombre}`}
                         className="rounded-lg border  border-white  "
                         loading="lazy"
@@ -79,7 +79,7 @@ export default function Card({ project }: CardProps) {
 
 
                                 <img
-                                    src={`../src/assets/img/${salida.nombre}.svg`}
+                                    src={`img/${salida.nombre}.svg`}
                                     alt={salida.nombre}
                                     className="bg-black w-5 h-5"
 

@@ -103,7 +103,7 @@ export default function Abilities() {
 
                   return (
 
-                    <img src={`src/assets/img/${dura.tecnologia}.svg`}
+                    <img src={`img/${dura.tecnologia}.svg`}
 
                       className="border transition-all border-white p-3 md:hover:p-2 rounded-md md:hover:animate-wiggle animate-infinite animate-duration-950 bg-slate-700 animate-delay-0"
                       alt={dura.tecnologia}

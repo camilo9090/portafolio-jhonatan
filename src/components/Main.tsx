@@ -54,7 +54,7 @@ export default function Main() {
                                 <div className='flex justify-center mt-10 flex-col gap-4 sm:mt-6 mx-auto sm:grid sm:grid-cols-2 '>
                                     <a className='group relative inline-flex  justify-start px-3 py-2 bg-slate-500 border 
                                         rounded-full  text-center border-transparent font-bold hover:border-black hover:bg-white'
-                                        href="src/assets/documents/cvJhonatanUribe.pdf"
+                                        href="file/cvJhonatan Uribe.pdf"
                                         download="cvJhonatanUribe.pdf"
                                     >
                                         <span className='absolute inset-0 border-2 ease-in-out w-full border-white rounded-full group-hover:border-black transition-colors duration-500'></span>
@@ -92,7 +92,7 @@ export default function Main() {
                     <div className="md:col-start-3 flex flex-col gap-5 justify-start items-center py-3 ">
                         <img
                             className="max-w-52 md:max-w-full h-auto rounded-full mt-20 shadow-lg shadow-sky-700 "
-                            src="/src/assets/img/imagen1.webp"
+                            src="img/imagen1.webp"
                             alt="foto perfil"
                             width={321}
                             height={251}
