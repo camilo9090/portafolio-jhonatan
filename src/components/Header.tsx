@@ -87,7 +87,7 @@ const Header = () => {
                   to="aboutme"
                   smooth={true}
                   duration={500}
-                  className=""
+                  className='font-bold hover:text-white hover:underline cursor-pointer'
                 >
                   Sobre Mí
                 </Link>
@@ -97,7 +97,7 @@ const Header = () => {
                   to='estudies'
                   smooth={true}
                   duration={500}
-                  className='font-bold hover:text-white hover:underline'
+                  className='font-bold hover:text-white hover:underline cursor-pointer'
 
 
                 >Estudios</Link>
@@ -105,7 +105,7 @@ const Header = () => {
                   to='habilidades'
                   smooth={true}
                   duration={500}
-                  className='font-bold hover:text-white hover:underline'
+                  className='font-bold hover:text-white hover:underline cursor-pointer'
 
 
                 >Habilidades</Link>
@@ -115,7 +115,7 @@ const Header = () => {
                   to='projects'
                   smooth={true}
                   duration={500}
-                  className='font-bold hover:text-white hover:underline'
+                  className='font-bold hover:text-white hover:underline cursor-pointer'
 
 
                 >Proyectos</Link>
